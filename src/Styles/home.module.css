@@ -1,0 +1,99 @@
+a {
+  text-decoration: none;
+  color: oklch(0.5267 0 28.07);
+  font-size: 1.3rem;
+  align-items: center;
+  display: flex;
+  column-gap: 20px;
+}
+
+.body {
+  font-family: "Fraunces", sans-serif;
+  min-height: 100dvh;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+}
+
+h1 {
+  font-weight: 700;
+  color: oklch(0.4989 0.1158 28.07);
+  font-size: 8rem;
+  text-align: end;
+  max-width: 650px;
+  text-wrap: wrap;
+}
+
+.heroSection h2 {
+  color: oklch(1 0.1147 28.07);
+}
+
+.identity {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+h2 {
+  font-weight: 700;
+  color: oklch(1 0.1147 28.07);
+  font-size: 2.5rem;
+}
+
+.seeThrough {
+  min-height: 100dvh;
+  border-radius: 20px;
+  width: 50dvw;
+  background-image: url("../assets/Images/BlogController.png");
+  background-size: cover;
+  box-shadow: inset 0 0 10px 0 oklch(0.2018 0.0081 17.85);
+  mask-image: url("../assets/Images/blartransparent.png");
+  mask-size: cover;
+  mask-position: center;
+  z-index: 3;
+}
+
+.heroSection {
+  min-height: 100dvh;
+  padding: 4%;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  max-width: 50dvw;
+  place-self: end;
+  justify-content: space-around;
+  z-index: 5;
+}
+
+.container {
+  max-height: 40dvh;
+  display: flex;
+  column-gap: 10px;
+  flex-direction: row;
+}
+
+.date {
+  font-size: 9rem;
+}
+
+.iconLinks {
+  display: flex;
+  gap: 20px;
+  padding: 2%;
+  align-items: end;
+}
+
+.iconLinks svg {
+  color: oklch(0.684 0 28.07);
+  font-size: 10px;
+}
+
+.subDate {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 200px;
+  line-height: 2.5rem;
+}

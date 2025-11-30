@@ -1,0 +1,18 @@
+nav {
+  display: flex;
+  align-items: center;
+  padding: 1% 4%;
+  position: absolute;
+  justify-content: center;
+  column-gap: 40px;
+  bottom: 0;
+  z-index: 6;
+  font-family: "Fraunces", sans-serif;
+  width: 100dvw;
+}
+
+nav h2 {
+  color: oklch(1 0.1147 28.07);
+  font-size: 1.6rem;
+  cursor: pointer;
+}
