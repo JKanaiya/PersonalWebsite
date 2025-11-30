@@ -1,0 +1,67 @@
+.body {
+  padding: 2%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.iconLinks {
+  display: flex;
+  flex-direction: column;
+  min-height: 30dvh;
+  font-size: 30px;
+  align-items: start;
+  padding: 4%;
+  font-family: "Stack Sans Notch", sans-serif;
+  justify-content: space-between;
+}
+
+.iconLinks a {
+  color: oklch(0.6869 0.0324 17.85);
+}
+
+.iconLinks svg {
+  width: 35px;
+  height: 35px;
+}
+
+img {
+  border-radius: 50%;
+  max-width: 300px;
+}
+
+.profile {
+  display: flex;
+  max-width: 40%;
+  min-height: 80dvh;
+  place-items: center;
+  background-color: oklch(0.2359 0.0324 17.85);
+  box-shadow: 10px 10px 0 oklch(0.0401 0.0081 17.85);
+  padding: 3%;
+  flex-direction: column;
+  border-radius: 20px;
+  justify-content: space-around;
+}
+
+.profile > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+aside {
+  padding: 4%;
+  max-width: 50%;
+  justify-content: center;
+  text-align: end;
+  color: oklch(0.6869 0.0324 17.85);
+}
+
+aside h1 {
+  max-width: none;
+  font-size: 5rem;
+}
+
+aside p {
+  font-family: "Stack Sans Notch", sans-serif;
+  font-size: 1.6rem;
+}
