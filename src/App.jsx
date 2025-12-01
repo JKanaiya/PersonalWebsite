@@ -1,5 +1,5 @@
 import "./Styles/reset.css";
-import "./Styles/nav.module.css";
+import navigation from "./Styles/nav.module.css";
 import { useState } from "react";
 import Home from "./Components/Home.jsx";
 import Projects from "./Components/Projects.jsx";
@@ -21,7 +21,7 @@ function App() {
         backgroundColor: "oklch(0.2018 0.0081 17.85)",
       }}
     >
-      <nav>
+      <nav className={navigation.nav}>
         <h2
           onClick={() => switchPage("Home")}
           style={{ fontSize: page == "Home" ? "2.5rem" : "1.5rem" }}

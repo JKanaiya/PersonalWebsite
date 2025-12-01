@@ -46,10 +46,10 @@ h2 {
   height: 100dvh;
   border-radius: 20px;
   width: 50dvw;
-  background-image: url("../assets/Images/BlogController.png");
+  background-image: url("../../assets/images/BlogController.png");
   background-size: cover;
   box-shadow: inset 0 0 10px 0 oklch(0.2018 0.0081 17.85);
-  mask-image: url("../assets/Images/blartransparent.png");
+  mask-image: url("../../assets/images/blartransparent.png");
   mask-size: cover;
   mask-position: center;
   z-index: 3;

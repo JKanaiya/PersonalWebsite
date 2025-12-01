@@ -3,7 +3,7 @@
     {
       "title": "BlogWriter",
       "desc": " Provides a front-end application to write and display the blogs to be read here: https://github.com/JKanaiya/BlogAPIReader.",
-      "image": "./assets/Images/BlogReaderImg.png",
+      "image": "../../assets/images/BlogReaderImg.png",
       "technologies": [
         "React",
         "Axios"
@@ -15,7 +15,7 @@
     {
       "title": "BlogAPI",
       "desc": "BlogAPI provides the backend API for these projects: https://github.com/JKanaiya/BlogAPIReader and https://github.com/JKanaiya/BlogWriter",
-      "image": "./assets/Images/Routing.png",
+      "image": "../../assets/images/Routing.png",
       "technologies": [
         "Nodedotjs",
         "Postgresql",
