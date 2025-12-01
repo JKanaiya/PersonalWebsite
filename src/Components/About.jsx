@@ -7,6 +7,7 @@ function About() {
     <div className={about.body}>
       <div className={about.profile}>
         <img
+          style={{ maxWidth: 300 }}
           src="../../public/assets/Images/PPS_1242(1).jpg"
           alt="Jonathan Kanaiya"
         />

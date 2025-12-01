@@ -32,9 +32,12 @@ function Project({
   live,
   livelink = "",
 }) {
+  console.log(window.innerWidth);
   return (
     <div key={desc} className={p.project}>
-      {even && <img src={`${image}`} alt={title} />}
+      {(even || window.innerWidth < 864) && (
+        <img src={`${image}`} alt={title} className={p.img} />
+      )}
       <div className={p.article}>
         <div className={p.head}>
           <h3>{title}</h3>
@@ -54,7 +57,7 @@ function Project({
           {technologies.map((tech) => icons[tech])}
         </span>
       </div>
-      {!even && <img src={`${image}`} alt={title} />}
+      {!even && window.innerWidth > 864 && <img src={`${image}`} alt={title} />}
     </div>
   );
 }

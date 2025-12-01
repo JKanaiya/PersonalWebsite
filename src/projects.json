@@ -26,21 +26,6 @@
       "ghlink": "https://github.com/JKanaiya/BlogAPI",
       "live": false,
       "livelink": ""
-    },
-    {
-      "title": "BlogAPI",
-      "desc": "BlogAaaPI provides the backend API for these projects: https://github.com/JKanaiya/BlogAPIReader and https://github.com/JKanaiya/BlogWriter",
-      "image": "./assets/Images/Routing.png",
-      "technologies": [
-        "Nodedotjs",
-        "Postgresql",
-        "Prisma",
-        "Passport",
-        "Express"
-      ],
-      "ghlink": "https://github.com/JKanaiya/BlogAPI",
-      "live": false,
-      "livelink": ""
     }
   ]
 }

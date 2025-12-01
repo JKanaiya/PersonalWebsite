@@ -38,7 +38,7 @@ iconLinks a[title]:hover::after {
 
 img {
   border-radius: 50%;
-  max-width: 300px;
+  max-width: 50%;
 }
 
 .profile {
@@ -92,15 +92,28 @@ aside p {
 
   .profile {
     min-height: 40dvh;
-    padding: 0 3%;
+    padding: 2% 3%;
     flex-direction: row;
     max-height: 50dvh;
+  }
+
+  aside h1 {
+    font-size: 3.5rem;
+  }
+
+  aside p {
+    font-size: 1.3rem;
   }
 }
 
 @media screen and (max-width: 450px) {
   .profile {
     flex-direction: column;
-    min-height: 80dvh;
+    min-height: 70dvh;
+  }
+
+  aside {
+    padding-bottom: 9%;
+    min-height: 50dvh;
   }
 }
