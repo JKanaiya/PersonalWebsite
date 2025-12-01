@@ -1,12 +1,15 @@
 .body {
   padding: 2%;
+  overflow: hidden;
   display: flex;
+  overflow-y: scroll;
   justify-content: space-around;
 }
 
 .iconLinks {
   display: flex;
   flex-direction: column;
+  min-width: 90%;
   min-height: 30dvh;
   font-size: 30px;
   align-items: start;
@@ -17,6 +20,15 @@
 
 .iconLinks a {
   color: oklch(0.6869 0.0324 17.85);
+}
+
+h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+iconLinks a[title]:hover::after {
+  border: none;
 }
 
 .iconLinks svg {
@@ -31,7 +43,7 @@ img {
 
 .profile {
   display: flex;
-  max-width: 40%;
+  min-width: 40%;
   min-height: 80dvh;
   place-items: center;
   background-color: oklch(0.2359 0.0324 17.85);
@@ -44,13 +56,14 @@ img {
 
 .profile > div {
   display: flex;
+  min-width: 100%;
   flex-direction: column;
   justify-content: space-between;
 }
 
 aside {
   padding: 4%;
-  max-width: 50%;
+  min-width: 50%;
   justify-content: center;
   text-align: end;
   color: oklch(0.6869 0.0324 17.85);
@@ -64,4 +77,30 @@ aside h1 {
 aside p {
   font-family: "Stack Sans Notch", sans-serif;
   font-size: 1.6rem;
+}
+
+@media screen and (max-width: 864px) {
+  img {
+    max-width: 200px;
+    min-width: 40%;
+  }
+
+  .body {
+    flex-direction: column;
+    max-height: 100dvh;
+  }
+
+  .profile {
+    min-height: 40dvh;
+    padding: 0 3%;
+    flex-direction: row;
+    max-height: 50dvh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .profile {
+    flex-direction: column;
+    min-height: 80dvh;
+  }
 }

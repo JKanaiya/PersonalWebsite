@@ -17,25 +17,26 @@ function App() {
       style={{
         position: "relative",
         minHeight: "100dvh",
+        maxWidth: "100dvw",
         backgroundColor: "oklch(0.2018 0.0081 17.85)",
       }}
     >
       <nav>
         <h2
           onClick={() => switchPage("Home")}
-          style={{ fontSize: page == "Home" ? 50 : 30 }}
+          style={{ fontSize: page == "Home" ? "2.5rem" : "1.5rem" }}
         >
           Home
         </h2>
         <h2
           onClick={() => switchPage("Projects")}
-          style={{ fontSize: page == "Projects" ? 50 : 30 }}
+          style={{ fontSize: page == "Projects" ? "2.5rem" : "1.5rem" }}
         >
           Projects
         </h2>
         <h2
           onClick={() => switchPage("About")}
-          style={{ fontSize: page == "About" ? 50 : 30 }}
+          style={{ fontSize: page == "About" ? "2.5rem" : "1.5rem" }}
         >
           About
         </h2>

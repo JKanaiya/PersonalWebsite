@@ -20,7 +20,7 @@ a {
 h1 {
   font-weight: 700;
   color: oklch(0.4989 0.1158 28.07);
-  font-size: 8rem;
+  font-size: 9rem;
   text-align: end;
   max-width: 650px;
   text-wrap: wrap;
@@ -96,4 +96,10 @@ h2 {
   justify-content: center;
   max-width: 200px;
   line-height: 2.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  h1 {
+    font-size: 17dvw;
+  }
 }

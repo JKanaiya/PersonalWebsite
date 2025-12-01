@@ -1,6 +1,5 @@
 import about from "../Styles/about.module.css";
-import { SiGithub, SiLinkedin } from "react-icons/si";
-import { MdOutlineEmail } from "react-icons/md";
+import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
 import { IoMdDownload } from "react-icons/io";
 
 function About() {
@@ -14,22 +13,26 @@ function About() {
         <div>
           <span className={about.iconLinks}>
             <a href="https://github.com/JKanaiya">
-              <SiGithub />
-              https://github.com/JKanaiya
+              <SiGithub title="https://github.com/JKanaiya" />
+              <h4>JKanaiya</h4>
             </a>
             <a href="https://www.linkedin.com/in/jonathan-kanaiya-00a4b1332/">
-              <SiLinkedin />
-              https://www.linkedin.com/in/jonathan-kanaiya
+              <SiLinkedin title="https://www.linkedin.com/in/jonathan-kanaiya-00a4b1332/" />
+
+              <h4>jonathan-kanaiya</h4>
             </a>
             <a href="mailto:jonathankanaiya@gmail.com">
-              <MdOutlineEmail /> jonathankanaiya@gmail.com
+              <SiGmail title="jonathankanaiya@gmail.com" />
+
+              <h4>jonathankanaiya</h4>
             </a>
             <a
               href="../../public/assets/jonathan-kanaiya-resume.pdf"
               download="Jonathan Kanaiya Resume"
+              title="My Resume"
             >
               <IoMdDownload />
-              Download Resume
+              <h4>Download Resume</h4>
             </a>
           </span>
         </div>
