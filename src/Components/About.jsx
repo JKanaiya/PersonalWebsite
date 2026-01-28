@@ -6,11 +6,13 @@ function About() {
   return (
     <div className={about.body}>
       <div className={about.profile}>
-        <img
-          style={{ maxWidth: 300 }}
-          src="../../assets/images/PPS_1242(1).jpg"
-          alt="Jonathan Kanaiya"
-        />
+        <span className={about.img}>
+        </span>
+        {/* <img */}
+        {/*   style={{ maxWidth: 300 }} */}
+        {/*   src="../../assets/images/PPS_1242(1).jpg" */}
+        {/*   alt="Jonathan Kanaiya" */}
+        {/* /> */}
         <div>
           <span className={about.iconLinks}>
             <a href="https://github.com/JKanaiya">

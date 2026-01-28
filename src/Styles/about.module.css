@@ -9,7 +9,7 @@
 .iconLinks {
   display: flex;
   flex-direction: column;
-  min-width: 90%;
+  min-width: 50%;
   min-height: 30dvh;
   font-size: 30px;
   align-items: start;
@@ -79,12 +79,15 @@ aside p {
   font-size: 1.6rem;
 }
 
-@media screen and (max-width: 864px) {
-  img {
-    max-width: 200px;
-    min-width: 40%;
-  }
+.img { 
+  border-radius: 50%;
+  min-width: 300px;
+  min-height: 300px;
+  background-image: url('../../assets/images/PPS_1242(1).jpg');
+  background-size: cover;
+}
 
+@media screen and (max-width: 864px) {
   .body {
     flex-direction: column;
     max-height: 100dvh;
@@ -106,6 +109,7 @@ aside p {
   }
 }
 
+
 @media screen and (max-width: 450px) {
   .profile {
     flex-direction: column;
@@ -117,3 +121,4 @@ aside p {
     min-height: 50dvh;
   }
 }
+
