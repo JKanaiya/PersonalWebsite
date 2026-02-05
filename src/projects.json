@@ -28,20 +28,8 @@
       "livelink": ""
     },
     {
-      "title": "FindWaldoFrontend",
-      "desc": "Frontend of a PERN Fullstack Application to simulate a game of Where's Waldo.",
-      "image": "../../assets/images/WaldoFront.png",
-      "technologies": [
-        "React",
-        "Axios"
-      ],
-      "ghlink": "https://github.com/JKanaiya/WhereisWaldoFrontend.git",
-      "live": true,
-      "livelink": "https://odinfindwaldo.netlify.app/"
-    },
-    {
       "title": "FindWaldoAPI",
-      "desc": "API for the front-end of a where's waldo game.",
+      "desc": "API for its pair project, provides a service to assist in validating the guesses of a user, and changing the user's name.",
       "image": "../../assets/images/waldoRoutes.png",
       "technologies": [
         "Nodedotjs",
@@ -52,6 +40,18 @@
       "ghlink": "https://github.com/JKanaiya/waldoBackendAPI.git",
       "live": false,
       "livelink": ""
+    },
+    {
+      "title": "FindWaldoFrontend",
+      "desc": "Responsive Photo tagging application masquerading as a Where's Waldo Game. The user can make guesses by clicking/tapping a location and selecting the character from the list spawned near the point of interaction.",
+      "image": "../../assets/images/WaldoFront.png",
+      "technologies": [
+        "React",
+        "Axios"
+      ],
+      "ghlink": "https://github.com/JKanaiya/WhereisWaldoFrontend.git",
+      "live": true,
+      "livelink": "https://odinfindwaldo.netlify.app/"
     }
   ]
 }
