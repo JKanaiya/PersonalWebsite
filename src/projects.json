@@ -26,6 +26,32 @@
       "ghlink": "https://github.com/JKanaiya/BlogAPI",
       "live": false,
       "livelink": ""
+    },
+    {
+      "title": "FindWaldoFrontend",
+      "desc": "Frontend of a PERN Fullstack Application to simulate a game of Where's Waldo.",
+      "image": "../../assets/images/WaldoFront.png",
+      "technologies": [
+        "React",
+        "Axios"
+      ],
+      "ghlink": "https://github.com/JKanaiya/WhereisWaldoFrontend.git",
+      "live": true,
+      "livelink": "https://odinfindwaldo.netlify.app/"
+    },
+    {
+      "title": "FindWaldoAPI",
+      "desc": "API for the front-end of a where's waldo game.",
+      "image": "../../assets/images/waldoRoutes.png",
+      "technologies": [
+        "Nodedotjs",
+        "Postgresql",
+        "Prisma",
+        "Express"
+      ],
+      "ghlink": "https://github.com/JKanaiya/waldoBackendAPI.git",
+      "live": false,
+      "livelink": ""
     }
   ]
 }
