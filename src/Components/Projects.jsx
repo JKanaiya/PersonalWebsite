@@ -32,7 +32,6 @@ function Project({
   live,
   livelink = "",
 }) {
-  console.log(window.innerWidth);
   return (
     <div key={desc} className={p.project}>
       {(even || window.innerWidth < 864) && (

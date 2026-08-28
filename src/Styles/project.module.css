@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  max-height: 90dvh;
+  max-height: 98dvh;
   scrollbar-width: none;
   overflow-y: auto;
   scroll-behavior: smooth;
@@ -11,7 +11,7 @@
   justify-content: space-around;
   min-height: 100dvh;
   place-items: center;
-  padding: 3%;
+  padding: 10%;
 }
 
 .project {

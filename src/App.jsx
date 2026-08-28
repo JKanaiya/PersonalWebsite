@@ -18,7 +18,7 @@ function App() {
         position: "relative",
         minHeight: "100dvh",
         maxWidth: "100dvw",
-        backgroundColor: "oklch(0.2018 0.0081 17.85)",
+        backgroundColor: "oklch(0.2018 0.0081 30.85)",
       }}
     >
       <nav className={navigation.nav}>
