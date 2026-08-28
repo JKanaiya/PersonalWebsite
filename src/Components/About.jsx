@@ -6,8 +6,7 @@ function About() {
   return (
     <div className={about.body}>
       <div className={about.profile}>
-        <span className={about.img}>
-        </span>
+        <span className={about.img}></span>
         {/* <img */}
         {/*   style={{ maxWidth: 300 }} */}
         {/*   src="../../assets/images/PPS_1242(1).jpg" */}
@@ -30,7 +29,7 @@ function About() {
               <h4>jonathankanaiya</h4>
             </a>
             <a
-              href="../../public/assets/jonathan-kanaiya-resume.pdf"
+              href="/assets/jonathan-kanaiya-resume.pdf"
               download="Jonathan Kanaiya Resume"
               title="My Resume"
             >
