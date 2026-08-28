@@ -1,5 +1,6 @@
 import about from "../Styles/about.module.css";
-import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
+import { SiGithub, SiGmail } from "react-icons/si";
+import { FaLinkedin } from "react-icons/fa";
 import { IoMdDownload } from "react-icons/io";
 
 function About() {
@@ -19,7 +20,7 @@ function About() {
               <h4>JKanaiya</h4>
             </a>
             <a href="https://www.linkedin.com/in/jonathan-kanaiya-00a4b1332/">
-              <SiLinkedin title="https://www.linkedin.com/in/jonathan-kanaiya-00a4b1332/" />
+              <FaLinkedin title="https://www.linkedin.com/in/jonathan-kanaiya-00a4b1332/" />
 
               <h4>jonathan-kanaiya</h4>
             </a>
@@ -44,7 +45,8 @@ function About() {
         <p>
           I am a Full Stack Engineer with experience building websites and web
           applications. I specialize in React, Express, PostgreSQL and Node, and
-          have experience building applications with Flutter, Dart, C# and Java.
+          have experience building applications with Python, Flutter, Dart, C#
+          and Java.
         </p>
       </aside>
     </div>
