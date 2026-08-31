@@ -16,7 +16,7 @@ import {
 const icons = {
   React: <SiReact />,
   Axios: <SiAxios />,
-  Nodedotjs: <SiNodedotjs />,
+  Nodejs: <SiNodedotjs />,
   Postgresql: <SiPostgresql />,
   Prisma: <SiPrisma />,
   Passport: <SiPassport />,
@@ -39,7 +39,7 @@ function Project({
   livelink = "",
 }) {
   return (
-    <div key={desc} className={p.project}>
+    <div className={p.project}>
       {(even || window.innerWidth < 864) && (
         <img src={`${image}`} alt={title} className={p.img} />
       )}
@@ -72,7 +72,7 @@ function Projects() {
 
   const toggleTech = (tech) => {
     setSelectedTech((prev) =>
-      prev.includes(tech) ? prev.filter((t) => t !== tech) : [...prev, tech]
+      prev.includes(tech) ? prev.filter((t) => t !== tech) : [...prev, tech],
     );
   };
 
@@ -80,13 +80,13 @@ function Projects() {
     selectedTech.length === 0
       ? projects.projects
       : projects.projects.filter((proj) =>
-          selectedTech.every((tech) => proj.technologies.includes(tech))
+          selectedTech.every((tech) => proj.technologies.includes(tech)),
         );
 
   return (
     <>
       <div className={p.searchContainer}>
-        <h3>Filter by Technology:</h3>
+        <input type="text" name="search" value="" className={p.search} onChange={}/>
         <div className={p.techFilter}>
           {allTechnologies.map((tech) => (
             <button
@@ -97,7 +97,7 @@ function Projects() {
               onClick={() => toggleTech(tech)}
             >
               {icons[tech]}
-              <span>{tech}</span>
+              {selectedTech.includes(tech) && <span>{tech}</span>}
             </button>
           ))}
         </div>
@@ -110,6 +110,7 @@ function Projects() {
               projects.projects.indexOf(proj) == 0
             }
             title={proj.title}
+            key={proj.desc}
             desc={proj.desc}
             image={proj.image}
             technologies={proj.technologies}

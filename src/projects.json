@@ -17,7 +17,7 @@
       "desc": "BlogAPI provides the backend API for these projects: https://github.com/JKanaiya/BlogAPIReader and https://github.com/JKanaiya/BlogWriter",
       "image": "../../assets/images/Routing.png",
       "technologies": [
-        "Nodedotjs",
+        "Nodejs",
         "Postgresql",
         "Prisma",
         "Passport",
@@ -32,7 +32,7 @@
       "desc": "API for its pair project, provides a service to assist in validating the guesses of a user, and changing the user's name.",
       "image": "../../assets/images/waldoRoutes.png",
       "technologies": [
-        "Nodedotjs",
+        "Nodejs",
         "Postgresql",
         "Prisma",
         "Express"
