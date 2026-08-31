@@ -33,6 +33,8 @@
   background-color: inherit;
   border-radius: 5px;
   border: 0.5px solid #ffffff8c;
+  color: white;
+  padding: 1px 10px;
 }
 
 .searchContainer h3 {

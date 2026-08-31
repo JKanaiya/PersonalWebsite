@@ -89,7 +89,9 @@ function Projects() {
       searchTerm === "" ||
       proj.title.toLowerCase().includes(searchLower) ||
       proj.desc.toLowerCase().includes(searchLower) ||
-      proj.technologies.some((tech) => tech.toLowerCase().includes(searchLower));
+      proj.technologies.some((tech) =>
+        tech.toLowerCase().includes(searchLower),
+      );
 
     return matchesTech && matchesSearch;
   });
@@ -103,7 +105,7 @@ function Projects() {
           value={searchTerm}
           className={p.search}
           onChange={(e) => setSearchTerm(e.target.value)}
-          placeholder="Search by title, description, or technology..."
+          placeholder="Search"
         />
         <div className={p.techFilter}>
           {allTechnologies.map((tech) => (
