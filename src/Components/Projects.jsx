@@ -69,6 +69,7 @@ function Project({
 
 function Projects() {
   const [selectedTech, setSelectedTech] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   const toggleTech = (tech) => {
     setSelectedTech((prev) =>
@@ -76,17 +77,34 @@ function Projects() {
     );
   };
 
-  const filteredProjects =
-    selectedTech.length === 0
-      ? projects.projects
-      : projects.projects.filter((proj) =>
-          selectedTech.every((tech) => proj.technologies.includes(tech)),
-        );
+  const filteredProjects = projects.projects.filter((proj) => {
+    // Filter by selected technologies
+    const matchesTech =
+      selectedTech.length === 0 ||
+      selectedTech.every((tech) => proj.technologies.includes(tech));
+
+    // Filter by search term (matches title, description, or technologies)
+    const searchLower = searchTerm.toLowerCase();
+    const matchesSearch =
+      searchTerm === "" ||
+      proj.title.toLowerCase().includes(searchLower) ||
+      proj.desc.toLowerCase().includes(searchLower) ||
+      proj.technologies.some((tech) => tech.toLowerCase().includes(searchLower));
+
+    return matchesTech && matchesSearch;
+  });
 
   return (
     <>
       <div className={p.searchContainer}>
-        <input type="text" name="search" value="" className={p.search} onChange={}/>
+        <input
+          type="text"
+          name="search"
+          value={searchTerm}
+          className={p.search}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          placeholder="Search by title, description, or technology..."
+        />
         <div className={p.techFilter}>
           {allTechnologies.map((tech) => (
             <button
