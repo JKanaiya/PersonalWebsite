@@ -1,3 +1,4 @@
+import { useState } from "react";
 import projects from "../projects.json";
 import p from "../Styles/project.module.css";
 import { RxArrowTopRight } from "react-icons/rx";
@@ -21,6 +22,11 @@ const icons = {
   Passport: <SiPassport />,
   Express: <SiExpress />,
 };
+
+// Get all unique technologies from projects
+const allTechnologies = [
+  ...new Set(projects.projects.flatMap((proj) => proj.technologies)),
+];
 
 function Project({
   even,
@@ -62,24 +68,58 @@ function Project({
 }
 
 function Projects() {
+  const [selectedTech, setSelectedTech] = useState([]);
+
+  const toggleTech = (tech) => {
+    setSelectedTech((prev) =>
+      prev.includes(tech) ? prev.filter((t) => t !== tech) : [...prev, tech]
+    );
+  };
+
+  const filteredProjects =
+    selectedTech.length === 0
+      ? projects.projects
+      : projects.projects.filter((proj) =>
+          selectedTech.every((tech) => proj.technologies.includes(tech))
+        );
+
   return (
-    <div className={p.container}>
-      {projects.projects.map((proj) => (
-        <Project
-          even={
-            projects.projects.indexOf(proj) % 2 == 0 ||
-            projects.projects.indexOf(proj) == 0
-          }
-          title={proj.title}
-          desc={proj.desc}
-          image={proj.image}
-          technologies={proj.technologies}
-          ghlink={proj.ghlink}
-          live={proj.live}
-          livelink={proj.livelink}
-        />
-      ))}
-    </div>
+    <>
+      <div className={p.searchContainer}>
+        <h3>Filter by Technology:</h3>
+        <div className={p.techFilter}>
+          {allTechnologies.map((tech) => (
+            <button
+              key={tech}
+              className={`${p.techBtn} ${
+                selectedTech.includes(tech) ? p.selected : ""
+              }`}
+              onClick={() => toggleTech(tech)}
+            >
+              {icons[tech]}
+              <span>{tech}</span>
+            </button>
+          ))}
+        </div>
+      </div>
+      <div className={p.container}>
+        {filteredProjects.map((proj) => (
+          <Project
+            even={
+              projects.projects.indexOf(proj) % 2 == 0 ||
+              projects.projects.indexOf(proj) == 0
+            }
+            title={proj.title}
+            desc={proj.desc}
+            image={proj.image}
+            technologies={proj.technologies}
+            ghlink={proj.ghlink}
+            live={proj.live}
+            livelink={proj.livelink}
+          />
+        ))}
+      </div>
+    </>
   );
 }
 
