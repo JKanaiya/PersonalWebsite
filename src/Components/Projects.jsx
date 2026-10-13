@@ -9,6 +9,7 @@ import {
   SiPassport,
   SiPrisma,
   SiPostgresql,
+  SiSocketdotio,
   SiExpress,
   SiAxios,
 } from "react-icons/si";
@@ -21,6 +22,7 @@ const icons = {
   Prisma: <SiPrisma />,
   Passport: <SiPassport />,
   Express: <SiExpress />,
+  SocketIO: <SiSocketdotio />,
 };
 
 // Get all unique technologies from projects

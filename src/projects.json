@@ -1,6 +1,31 @@
 {
   "projects": [
     {
+      "title": "MessagingApp",
+      "desc": "MessagingApp provides a front-end application to converse with other users bidirectionally in real-time. This API:https://github.com/JKanaiya/MessagingApi provides the functionality to facilitate this interaction.",
+      "image": "../../assets/images/MessagingApp.png",
+      "technologies": [
+        "React",
+        "Axios",
+        "SocketIO"
+      ],
+      "ghlink": "https://github.com/JKanaiya/MessagingApp",
+      "live": true,
+      "livelink": "https://odinmessagingapp.netlify.app/"
+    },
+    {
+      "title": "MessagingApi",
+      "desc": "Messaging API provides the backend API for this project: https://github.com/JKanaiya/MessagingApp",
+      "image": "../../assets/images/MessagingApi.png",
+      "technologies": [
+        "React",
+        "Axios"
+      ],
+      "ghlink": "https://github.com/JKanaiya/MessagingApi",
+      "live": false,
+      "livelink": ""
+    },
+    {
       "title": "BlogWriter",
       "desc": " Provides a front-end application to write and display the blogs to be read here: https://github.com/JKanaiya/BlogAPIReader.",
       "image": "../../assets/images/BlogReaderImg.png",
