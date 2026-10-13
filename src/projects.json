@@ -3,7 +3,7 @@
     {
       "title": "MessagingApp",
       "desc": "MessagingApp provides a front-end application to converse with other users bidirectionally in real-time. This API:https://github.com/JKanaiya/MessagingApi provides the functionality to facilitate this interaction.",
-      "image": "../../assets/images/MessagingApp.png",
+      "image": "/assets/images/MessagingApp.png",
       "technologies": [
         "React",
         "Axios",
@@ -16,10 +16,14 @@
     {
       "title": "MessagingApi",
       "desc": "Messaging API provides the backend API for this project: https://github.com/JKanaiya/MessagingApp",
-      "image": "../../assets/images/MessagingApi.png",
+      "image": "/assets/images/MessagingApi.png",
       "technologies": [
         "React",
-        "Axios"
+        "Nodejs",
+        "Prisma",
+        "Express",
+        "Passport",
+        "SocketIO"
       ],
       "ghlink": "https://github.com/JKanaiya/MessagingApi",
       "live": false,
@@ -28,7 +32,7 @@
     {
       "title": "BlogWriter",
       "desc": " Provides a front-end application to write and display the blogs to be read here: https://github.com/JKanaiya/BlogAPIReader.",
-      "image": "../../assets/images/BlogReaderImg.png",
+      "image": "/assets/images/BlogReaderImg.png",
       "technologies": [
         "React",
         "Axios"
@@ -40,7 +44,7 @@
     {
       "title": "BlogAPI",
       "desc": "BlogAPI provides the backend API for these projects: https://github.com/JKanaiya/BlogAPIReader and https://github.com/JKanaiya/BlogWriter",
-      "image": "../../assets/images/Routing.png",
+      "image": "/assets/images/Routing.png",
       "technologies": [
         "Nodejs",
         "Postgresql",
@@ -55,7 +59,7 @@
     {
       "title": "FindWaldoAPI",
       "desc": "API for its pair project, provides a service to assist in validating the guesses of a user, and changing the user's name.",
-      "image": "../../assets/images/waldoRoutes.png",
+      "image": "/assets/images/waldoRoutes.png",
       "technologies": [
         "Nodejs",
         "Postgresql",
@@ -69,7 +73,7 @@
     {
       "title": "FindWaldoFrontend",
       "desc": "Responsive Photo tagging application masquerading as a Where's Waldo Game. The user can make guesses by clicking/tapping a location and selecting the character from the list spawned near the point of interaction.",
-      "image": "../../assets/images/WaldoFront.png",
+      "image": "/assets/images/WaldoFront.png",
       "technologies": [
         "React",
         "Axios"
