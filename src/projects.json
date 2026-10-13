@@ -3,7 +3,7 @@
     {
       "title": "MessagingApp",
       "desc": "MessagingApp provides a front-end application to converse with other users bidirectionally in real-time. This API:https://github.com/JKanaiya/MessagingApi provides the functionality to facilitate this interaction.",
-      "image": "/assets/images/MessagingApp.png",
+      "image": "/assets/images/MessagingAPP.png",
       "technologies": [
         "React",
         "Axios",
@@ -16,7 +16,7 @@
     {
       "title": "MessagingApi",
       "desc": "Messaging API provides the backend API for this project: https://github.com/JKanaiya/MessagingApp",
-      "image": "/assets/images/MessagingApi.png",
+      "image": "/assets/images/Messaging_backend.png",
       "technologies": [
         "React",
         "Nodejs",
