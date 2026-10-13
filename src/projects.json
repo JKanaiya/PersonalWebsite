@@ -18,7 +18,6 @@
       "desc": "Messaging API provides the backend API for this project: https://github.com/JKanaiya/MessagingApp",
       "image": "/assets/images/Messaging_backend.png",
       "technologies": [
-        "React",
         "Nodejs",
         "Prisma",
         "Express",
