@@ -1,12 +1,42 @@
 {
   "projects": [
     {
+      "title": "RedditClone",
+      "desc": "RedditClone provides a front-end application to mimic some of the main functionality of the reddit.com website. This API:https://github.com/JKanaiya/RedditCloneAPI provides the functionality to facilitate this interaction.",
+      "image": "/assets/images/RedditClone.png",
+      "technologies": [
+        "React",
+        "Axios",
+        "SocketIO",
+        "Supabase"
+      ],
+      "ghlink": "https://github.com/JKanaiya/RedditClone",
+      "live": true,
+      "livelink": "https://redditclone.pages.dev/"
+    },
+    {
+      "title": "RedditCloneAPI",
+      "desc": "RedditClone API provides the backend API for this project: https://github.com/JKanaiya/RedditCloneAPI",
+      "image": "/assets/images/RedditClonebackend.png",
+      "technologies": [
+        "Nodejs",
+        "Prisma",
+        "Express",
+        "Passport",
+        "SocketIO"
+      ],
+      "ghlink": "https://github.com/JKanaiya/RedditCloneAPI",
+      "live": false,
+      "livelink": ""
+    },
+    {
       "title": "MessagingApp",
       "desc": "MessagingApp provides a front-end application to converse with other users bidirectionally in real-time. This API:https://github.com/JKanaiya/MessagingApi provides the functionality to facilitate this interaction.",
       "image": "/assets/images/MessagingAPP.png",
       "technologies": [
         "React",
         "Axios",
+        "Supabase",
         "SocketIO"
       ],
       "ghlink": "https://github.com/JKanaiya/MessagingApp",

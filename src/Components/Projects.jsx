@@ -10,6 +10,7 @@ import {
   SiPrisma,
   SiPostgresql,
   SiSocketdotio,
+  SiSupabase,
   SiExpress,
   SiAxios,
 } from "react-icons/si";
@@ -23,9 +24,9 @@ const icons = {
   Passport: <SiPassport />,
   Express: <SiExpress />,
   SocketIO: <SiSocketdotio />,
+  Supabase: <SiSupabase />,
 };
 
-// Get all unique technologies from projects
 const allTechnologies = [
   ...new Set(projects.projects.flatMap((proj) => proj.technologies)),
 ];
