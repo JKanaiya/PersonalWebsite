@@ -30,7 +30,7 @@ function About() {
               <h4>jonathankanaiya</h4>
             </a>
             <a
-              href="/assets/jonathan-kanaiya-resume.pdf"
+              href="/assets/Jonathan-Kanaiya-Junior-Software-Engineer.pdf"
               download="Jonathan Kanaiya Resume"
               title="My Resume"
             >
